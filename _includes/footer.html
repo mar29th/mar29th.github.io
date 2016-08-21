@@ -1,0 +1,40 @@
+<div class="ui vertical footer segment">
+
+  <div class="ui inverted section divider"></div>
+
+  <div class="ui center aligned container">
+
+    <div class="ui stackable inverted divided grid">
+      <div class="five wide column">
+        <h4 class="ui header">{{ site.name }}</h4>
+        <span>mar29th [at] hotmail [dot] com</span>
+      </div>
+
+      <div class="five wide column">
+        <div class="ui link list">
+            {% if site.github_username %}
+            <a class="item" href="https://github.com/{{ site.github_username }}">
+              <span><i class="large github icon"></i>{{ site.github_username }}</span>
+            </a>
+            {% endif %}
+
+            {% if site.twitter_username %}
+            <a class="item" href="https://twitter.com/{{ site.twitter_username }}">
+              <span><i class="large twitter icon"></i>{{ site.twitter_username }}</span>
+            </a>
+            {% endif %}
+            <a class="item" href="{{ "/feed.xml" | prepend: site.baseurl }}">
+              <span><i class="large inverted feed icon"></i>RSS Feed</span>
+            </a>
+        </div>
+      </div>
+
+      <div class="six wide column left aligned">
+        <p>{{ site.description }}</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

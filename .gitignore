@@ -1,0 +1,10 @@
+_site
+.sass-cache
+.jekyll-metadata
+
+# Ignore DS_Stores
+.DS_Store
+
+# Ignore IntelliJ Files
+*.iml
+.idea

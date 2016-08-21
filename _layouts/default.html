@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    <!-- Header -->
+    <div class="ui inverted vertical masthead center aligned segment" id="header">
+
+      <!-- Introductions -->
+      <div class="ui main text container" id="intro">
+        <h1 class="ui inverted header">{{ site.title }}</h1>
+        <h3>{{ site.intro }}</h3>
+      </div>
+
+      <!-- Navbar -->
+      <div class="ui borderless inverted menu" id="menu">
+        <div class="ui text container">
+          <a class="item" href="/">Home</a>
+          <a class="item" href="{{ "/about" | prepend: site.baseurl }}">About</a>
+          <div class="right item">
+            {% if site.github_username %}
+            <a href="https://github.com/{{ site.github_username }}">
+              <button class="circular ui inverted basic icon button">
+                <i class="large inverted github icon"></i>
+              </button>
+            </a>
+            {% endif %}
+            <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+              <button class="circular ui inverted basic icon button">
+                <i class="large feed icon"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content ui text container" id="content">
+      {{ content }}
+    </div>
+
+    <!-- Footer -->
+    {% include footer.html %}
+
+  </body>
+
+</html>

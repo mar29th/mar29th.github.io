@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="ui divided items">
+  {% for post in site.posts %}
+    <div class="item">
+      <div class="content">
+        <a class="header" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <div class="meta">
+          <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+          {% if post.tag %}
+          <span><i class="tag icon"></i>{{ post.tag }}</span>
+          {% endif %}
+        </div>
+        {% if post.summary %}
+        <div class="description">
+          {{ post.summary }}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>

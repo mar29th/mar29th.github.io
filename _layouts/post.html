@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div>
+
+  <h1 class="ui header">
+    {{ page.title }}
+    <div class="sub header">{{ page.date | date: "%b %-d, %Y" }}</div>
+  </h1>
+
+  <div class="ui segment">
+    {{ content }}
+  </div>
+
+  {% if page.comments %}
+  {% include disqus.html %}
+  {% endif %}
+
+</div>

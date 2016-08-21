@@ -1,0 +1,35 @@
+---
+layout: null
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ "/css/index.css" | prepend: site.baseurl }}"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dynamics.js/1.0.0/dynamics.min.js"></script>
+  <script src="{{ "/js/index.js" | prepend: site.baseurl }}"></script>
+  {% include analytics.html %}
+</head>
+<body>
+  <div class="floating-card" id="floating-card">
+    <div class="floating-card-wrapper">
+      <div class="content">
+        <h1>Infinitum</h1>
+        <span>When, where and why.</span>
+        <hr/>
+        <div>
+          <p>
+            <a href="{{ "/blog" | prepend: site.baseurl }}">blog</a>
+          </p>
+          <p>
+            <a href="https://github.com/{{ site.github_username }}">github</a>
+          </p>
+        </div>
+      </div>
+      <span class="light"></span>
+    </div>
+  </div>
+</body>
+</html>
