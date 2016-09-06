@@ -11,8 +11,8 @@ name: Tony Yu
 intro: When, where and why.
 email: mar29th@hotmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  A personal blog. Usually I talk about struggles in software development and
-  musings in technology. Sometimes it can just be a personal post about daily matters.
+  A personal blog. Usually I talk about musings in software development and
+  technology. Sometimes it can just be a personal post about daily matters.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mar29th.github.io" # the base hostname & protocol for your site
 github_username: mar29th
